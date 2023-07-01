@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="./js/bootstrap.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="border border-1 mt-4 main" style="padding: 120px;">
+            <h1 class="text-center text-success">CONTACT BOOK</h1><br><br><br>
+            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="./index.html" role="tab"
+                    aria-controls="pills-login" aria-selected="true">Login</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="./register.html" role="tab"
+                    aria-controls="pills-register" aria-selected="false">Register</a>
+                </li>
+            </ul>
+            <br><br>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                    <form action="contacts.php" method="post">
+                        <div class="form-outline mb-4">
+                            <input type="email" name="email" class="form-control" placeholder="Email address" required/>
+                        </div><br>
+                        <div class="form-outline mb-4">
+                            <input type="password" name="pwd" class="form-control" placeholder="Password" required/>
+                        </div><br>
+                        <button type="submit" class="btn btn-primary btn-block mb-4 w-100">SIGN IN</button><br><br>
+                        <div class="text-center">
+                            <p>Not a member? <a href="./register.html">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

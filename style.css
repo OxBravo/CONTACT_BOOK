@@ -1,0 +1,11 @@
+.h_1 { height: 1px; }
+.w_1 { width:1px; }
+.navigation {
+    bottom: 0px;
+    width: 680px;
+}
+.main {
+    width: 720px;
+    padding: 20px;
+    margin: auto;
+}
